@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Component</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+        :root {
+            --White: hsl(0, 0%, 100%);
+            --LightGray: hsl(212, 45%, 89%);
+            --GrayishBlue: hsl(220, 15%, 55%);
+            --DarkBlue: hsl(218, 44%, 22%);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        h1 {
+            font-size: 24px;
+            color: var(--DarkBlue);
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--LightGray);
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 340px;
+            background-color: var(--White);
+            padding: 18px 18px 36px 18px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            text-align: center;
+            box-shadow: 0 0 20px -8px var(--GrayishBlue);
+            transition: 300ms;
+        }
+        .card:hover {
+            box-shadow: 0 0 32px -8px var(--GrayishBlue);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            transition: filter 300ms;
+        }
+        .card img:hover {
+            filter: opacity(0.8);
+        }
+        .card p {
+            padding: 0 12px;
+            color: var(--GrayishBlue);
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.frontendmentor.io/">
+    <div class="card">
+        <img src="./images/image-qr-code.png" alt="QR Code image that also is a link">
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>Scan the QR Code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+    </a>
+</body>
+</html>
